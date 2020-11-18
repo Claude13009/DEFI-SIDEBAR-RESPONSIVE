@@ -1,0 +1,135 @@
+/*__________________________________________________________________________________________________________________
+___________________________________________SELECTEURS DE TYPE ____________________________________________________*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* """""""""""""" */
+body
+{
+    min-height: 100vh;
+    background: black;
+}
+/* """""""""""""" */
+ul
+{
+    list-style: none;
+}
+
+/*_________________________________________SELECTEURS DE CLASSE ____________________________________________________
+___________________________________________SIDE BAR DROITE________________________________________________________*/
+
+.titre2
+{
+    font-family: poppins, sans-serif;
+    color:black;
+}
+/* """""""""""""" */
+.navigation2
+{
+    position: fixed;
+    right: 0;                     
+    width: 60px;
+    height: 100%;
+    background:red;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+/* """""""""""""" */
+.navigation2:hover,
+.navigation2.active
+{
+    width: 300px;    
+}
+/* """""""""""""" */
+.navigation2 ul
+{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+/* """""""""""""" */
+.navigation2 ul li
+{
+    position: relative;
+    width: 100%;
+}
+/* """""""""""""" */
+.navigation2 ul li:hover
+{
+    background: #eb7ba0;
+}
+.navigation2 ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:black;
+}
+/* """""""""""""" */
+.navigation2 ul li a .icône
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center; 
+}
+/* """""""""""""" */
+.navigation2 ul li a .icône .fa
+{
+    font-size: 24px;
+}
+/* """""""""""""" */
+.navigation2 ul li a .titre
+{
+    position: relative;
+    display: block;
+    min-width: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+} 
+/* """""""""""""" */
+.coin2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: red;
+    cursor: pointer;
+}
+/* """""""""""""" */
+.coin2:hover
+{
+    background: #eb7ba0 ;
+}
+
+.coin2::before
+{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.coin2:hover::before
+{
+    content: '\f00d';
+}
